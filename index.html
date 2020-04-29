@@ -9,31 +9,220 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6f9f9c25f7.js" crossorigin="anonymous"></script>
+
+    <style>
+      .jessicaMenu{
+        height: 3em;
+        left: 41%;
+        margin-right: -50%;
+        position: relative 
+      }
+      
+      .fotoPerfil{
+        width: 250px;
+        height: 250px;
+        object-fit: fill;
+        width: auto;
+        max-width: 100%;
+        border-radius: 50%;
+      }
+
+      .corPrincipal{
+        background-color: rgb(235, 74, 74);
+      }
+      .corSecundaria{
+        background-color: rgb(32, 14, 14);
+      }
+
+      p{
+        font-family: Lato, 'Helvetica Neue',Arial, Helvetica, sans-serif;
+        color: black !important;
+      }
+
+      .icones{
+        padding-left: 5px;
+      }
+
+      .titulosBrancos{
+        text-decoration: underline;
+        text-underline-position: below;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: aliceblue;
+      }
+
+      .titulosPreto{
+        text-decoration: underline;
+        text-underline-position: below;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: rgb(13, 13, 14);
+      }
+
+      .textoBranco{
+        color: aliceblue !important;
+      }
+      .jumbotrom{
+        margin-bottom: 0px;
+      }
+
+      .textoFooter{
+        margin: 0px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+      }
+
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Jéssica Rodrigues da Costa</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
+    <nav class="corSecundaria navbar navbar-expand-lg navbar-light">
+        <div class="jessicaMenu">
+          <a class="navbar-brand textoBranco" href="#">Jéssica Rodrigues da Costa</a>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-        
           </ul>
           <ul class="navbar-nav">
-              <li class="nav-link" href="#">
-                  <a class="nav-lnk" href="#">Projetos</a>
+              <li class="nav-item active">
+                  <a class="nav-link textoBranco" href="#projetos">Projetos</a>
               </li>
-              <li class="nav-link" href="#">
-                <a class="nav-lnk" href="#">Sobre min</a>
+              <li class="nav-item active">
+                <a class="nav-link textoBranco" href="#sobre-mim">Sobre min</a>
             </li>
-            <li class="nav-link" href="#">
-                <a class="nav-lnk" href="#">Contato</a>
+            <li class="nav-item active">
+                <a class="nav-link textoBranco" href="#contato">Contato</a>
             </li>
 
           </ul>
         </div>
       </nav>
+      <section class="jumbotron text-center corPrincipal">
+        <div class="container">
+          <h2 class="jumbotrom-heading text-center">
+            <img class="fotoPerfil" src="https://avatars3.githubusercontent.com/u/41476072?s=460&u=84a504aef52ca8c0d928e9e8f5f22b651b47cf00&v=4">
+            <h1 class="jumbotron-heading">Jéssica Rodrigues</h1>
+            <p class="lead textoBranco">Estudante de Sistema de Informação - Desenvolvdora</p>
+            <p>
+              <a href="#contato" class="btn btn-dark my-2">
+                Contato</a>
+            </p>
+            <a href="https://www.linkedin.com/in/j%C3%A9ssica-rodrigues-97040b151/"><i class="textoBranco fab fa-linkedin"></i></a>
+            <a href="https://github.com/JessicaRodriguesdc"><i class="textoBranco icones fab fa-github"></i></a>
+            <a href="https://www.instagram.com/jessica.rodriguesdc/"><i class="textoBranco icones fab fa-instagram"></i></a>
+        </h2>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light" id="projetos">
+        <div class="container">
+          <h2 class="jumbotron-heading text-center titulosPreto">Projetos</h2> 
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="img/" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text">Este é um projeto de CRUD em Entity framework, com o intuito de aplicar o migrations.</p>
+                  <ul>
+                    <li>C#</li>
+                    <li>.Net</li>
+                    <li>Entity framework</li>
+                    <li>Migrations</li>
+                    <li>SqLite</li>
+                  </ul>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://github.com/JessicaRodriguesdc/CRUD_EF_SqLite_Migrations"><button type="button" class="btn btn-sm btn-outline-dark">Ver Código</button></a>   
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="img/" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text">Este é um projeto de uma API de Vendas desenvolvido em Java.</p>
+                  <ul>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>JPA</li>
+                    <li>RestFul</li>
+                    <li>Security</li>
+                    <li>JWT</li>
+                  </ul>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://github.com/JessicaRodriguesdc/API-Vendas"><button type="button" class="btn btn-sm btn-outline-dark">Ver Código</button></a>   
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="img/" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text">Este é um projeto de uma Blog sobre notícias do mundo da tecnologia.</p>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                  </ul>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://github.com/JessicaRodriguesdc/Blog_Dev"><button type="button" class="btn btn-sm btn-outline-dark">Ver Código</button></a>   
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <section class="jumbotron text-center corPrincipal" id="sobre-mim">
+        <div class="container">
+          <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
+          <p class="lead textoBranco" align="justify">
+            Olá meu nome é Jéssica e atualmente estou estagiándo como desenvolvdora back-end, desenvolvendo projetos em c#(.Net framework e core) e em Java(Spring).
+            apaixonada por cultura geek e gosto de buscar e compartilhar conhecimento.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <div class="container-fluid" id="contato">
+            <h3 style="padding-top: 60px;" class="text-center titulosPreto">Disponível para Oportunidades</h3>
+            
+            <a class="nav-link" href="mailto:jessicarodridc@gmail.com">
+              <h4 style="padding-bottom: 60px; margin-bottom: 0px;" class="text-center">
+                <i class="fas fa-mail-bulk">
+                  jessicarodridc@gmail.com
+                </i>
+                </h4>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-center corSecundaria textoFooter">
+        <p class="textoBranco"> © 2020 Desenvolvido por:
+          Jéssica Rodrigues da Costa</p>
+      </footer>
+
 </body>
 </html>
