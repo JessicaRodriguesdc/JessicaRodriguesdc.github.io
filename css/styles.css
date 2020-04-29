@@ -1,0 +1,129 @@
+@media screen and (max-width: 1275px) {
+    .jessicaMenu{
+      height: 3em;
+      left: 0%;
+      position: relative; 
+    }
+
+    .fotoPerfil{
+      width: 250px;
+      height: 250px;
+      object-fit: fill;
+      width: auto;
+      max-width: 100%;
+      border-radius: 50%;
+    }
+
+    .corPrincipal{
+      background-color: rgb(235, 74, 74);
+    }
+    .corSecundaria{
+      background-color: rgb(32, 14, 14);
+    }
+
+    p{
+      font-family: Lato, 'Helvetica Neue',Arial, Helvetica, sans-serif;
+      color: black !important;
+    }
+
+    .icones{
+      padding-left: 5px;
+    }
+
+    .titulosBrancos{
+      text-decoration: underline;
+      text-underline-position: below;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: aliceblue;
+    }
+
+    .titulosPreto{
+      text-decoration: underline;
+      text-underline-position: below;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: rgb(13, 13, 14);
+    }
+
+    .textoBranco{
+      color: aliceblue !important;
+    }
+    .jumbotrom{
+      margin-bottom: 0px;
+    }
+
+    .textoFooter{
+      margin: 0px;
+      padding-top: 30px;
+      padding-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 1276px) { 
+  .jessicaMenu{
+      height: 3em;
+      left: 41%;
+      position: relative; 
+    }
+
+  .fotoPerfil{
+    width: 250px;
+    height: 250px;
+    object-fit: fill;
+    width: auto;
+    max-width: 100%;
+    border-radius: 50%;
+  }
+
+  .corPrincipal{
+    background-color: rgb(235, 74, 74);
+  }
+  .corSecundaria{
+    background-color: rgb(32, 14, 14);
+  }
+
+  p{
+    font-family: Lato, 'Helvetica Neue',Arial, Helvetica, sans-serif;
+    color: black !important;
+  }
+
+  .icones{
+    padding-left: 5px;
+  }
+
+  .titulosBrancos{
+    text-decoration: underline;
+    text-underline-position: below;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: aliceblue;
+  }
+
+  .titulosPreto{
+    text-decoration: underline;
+    text-underline-position: below;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(13, 13, 14);
+  }
+
+  .textoBranco{
+    color: aliceblue !important;
+  }
+  .jumbotrom{
+    margin-bottom: 0px;
+  }
+
+  .textoFooter{
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  }
+  html{
+    scroll-behavior: smooth;
+  }
