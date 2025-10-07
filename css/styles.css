@@ -1,129 +1,289 @@
-@media screen and (max-width: 1275px) {
-    .jessicaMenu{
-      height: 3em;
-      left: 0%;
-      position: relative; 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .fotoPerfil{
-      width: 250px;
-      height: 250px;
-      object-fit: fill;
-      width: auto;
-      max-width: 100%;
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* HEADER / HERO */
+    header {
+      position: relative;
+      text-align: center;
+      padding: 100px 20px;
+      background: url('https://images.unsplash.com/photo-1526378722470-4bda0f5b74e0?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
+      border: 4px solid #fff;
+      object-fit: cover;
+      z-index: 1;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+      animation: fadeIn 1s ease;
     }
 
-    .corPrincipal{
-      background-color: rgb(235, 74, 74);
-    }
-    .corSecundaria{
-      background-color: rgb(32, 14, 14);
-    }
-
-    p{
-      font-family: Lato, 'Helvetica Neue',Arial, Helvetica, sans-serif;
-      color: black !important;
+    header h1 {
+      font-size: 2.3em;
+      margin-top: 15px;
+      position: relative;
+      z-index: 1;
+      animation: slideDown 1s ease;
     }
 
-    .icones{
-      padding-left: 5px;
+    header p {
+      position: relative;
+      font-size: 1.1em;
+      z-index: 1;
+      margin-top: 5px;
+      animation: fadeIn 1.5s ease;
     }
 
-    .titulosBrancos{
-      text-decoration: underline;
-      text-underline-position: below;
-      padding-bottom: 20px;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: aliceblue;
+    .social-icons {
+      position: relative;
+      z-index: 1;
+      margin-top: 15px;
     }
 
-    .titulosPreto{
-      text-decoration: underline;
-      text-underline-position: below;
-      padding-bottom: 20px;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: rgb(13, 13, 14);
+    .social-icons a {
+      color: #fff;
+      font-size: 1.8rem;
+      margin: 0 10px;
+      transition: transform 0.3s, color 0.3s;
     }
 
-    .textoBranco{
-      color: aliceblue !important;
-    }
-    .jumbotrom{
-      margin-bottom: 0px;
+    .social-icons a:hover {
+      transform: scale(1.15);
+      color: #e50914;
     }
 
-    .textoFooter{
-      margin: 0px;
-      padding-top: 30px;
-      padding-bottom: 15px;
+    .btn-primary {
+      background-color: #e50914;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 25px;
+      transition: background 0.3s, transform 0.3s;
     }
-  }
-  @media screen and (min-width: 1276px) { 
-  .jessicaMenu{
-      height: 3em;
-      left: 41%;
-      position: relative; 
+
+    .btn-primary:hover {
+      background-color: #b00710;
+      transform: scale(1.05);
     }
 
-  .fotoPerfil{
-    width: 250px;
-    height: 250px;
-    object-fit: fill;
-    width: auto;
-    max-width: 100%;
-    border-radius: 50%;
-  }
+    .language-switch {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      z-index: 2;
+    }
 
-  .corPrincipal{
-    background-color: rgb(235, 74, 74);
-  }
-  .corSecundaria{
-    background-color: rgb(32, 14, 14);
-  }
+    .language-switch button {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: #fff;
+      padding: 5px 10px;
+      margin-left: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
 
-  p{
-    font-family: Lato, 'Helvetica Neue',Arial, Helvetica, sans-serif;
-    color: black !important;
-  }
+    .language-switch button:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
 
-  .icones{
-    padding-left: 5px;
-  }
+    /* SECTIONS */
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-  .titulosBrancos{
-    text-decoration: underline;
-    text-underline-position: below;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: aliceblue;
-  }
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 2em;
+      position: relative;
+    }
 
-  .titulosPreto{
-    text-decoration: underline;
-    text-underline-position: below;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: rgb(13, 13, 14);
-  }
+    h2.section-title::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #e50914;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
 
-  .textoBranco{
-    color: aliceblue !important;
-  }
-  .jumbotrom{
-    margin-bottom: 0px;
-  }
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
 
-  .textoFooter{
-    margin: 0px;
-    padding-top: 30px;
-    padding-bottom: 15px;
-  }
-  }
-  html{
-    scroll-behavior: smooth;
-  }
+    .project-card {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(229, 9, 20, 0.4);
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-content h5 {
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .project-content p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #e50914;
+      color: #fff;
+      padding: 4px 10px;
+      margin: 4px 4px 0 0;
+      font-size: 0.75rem;
+      border-radius: 12px;
+    }
+
+    /* ABOUT */
+    #sobre-mim p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      color: #ccc;
+      font-size: 1.05em;
+    }
+
+    /* CONTACT */
+    #contato {
+      text-align: center;
+    }
+
+    #contato a {
+      display: inline-block;
+      margin: 15px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    #contato a:hover {
+      transform: scale(1.1);
+      color: #e50914;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #000;
+      color: #777;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header {
+        padding: 80px 15px;
+      }
+
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      .language-switch {
+        top: 15px;
+        right: 15px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .btn-primary {
+        padding: 10px 20px;
+        font-size: 0.9em;
+      }
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
