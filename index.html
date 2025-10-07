@@ -1,155 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jéssica Rodrigues</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/6f9f9c25f7.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Jéssica Rodrigues</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+  <meta name="description" content="Portfólio de Jéssica Rodrigues: Engenheira de Software, Web e Back-end Developer.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6f9f9c25f7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="corSecundaria navbar navbar-expand-lg navbar-light">
-        <div class="jessicaMenu">
-          <a class="navbar-brand textoBranco" href="#">Jéssica Rodrigues da Costa</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-          </ul>
-          <ul class="navbar-nav">
-              <li class="nav-item active">
-                  <a class="nav-link textoBranco" href="#projetos">Projetos</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link textoBranco" href="#sobre-mim">Sobre mim</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link textoBranco" href="#contato">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="jumbotron text-center corPrincipal">
-        <div class="container">
-          <h2 class="jumbotrom-heading text-center">
-            <img class="fotoPerfil" src="https://avatars3.githubusercontent.com/u/41476072?s=460&u=84a504aef52ca8c0d928e9e8f5f22b651b47cf00&v=4">
-            <h1 class="jumbotron-heading">Jéssica Rodrigues</h1>
-            <p class="lead textoBranco">| 🎓Student of Information System | 💻 Web Developer | ☕ Back-end developer |</p>
-            <p>
-              <a href="#contato" class="btn btn-dark my-2">
-                Contato</a>
-            </p>
-            <a href="https://www.linkedin.com/in/j%C3%A9ssica-rodrigues-97040b151/"><i class="textoBranco fab fa-linkedin"></i></a>
-            <a href="https://github.com/JessicaRodriguesdc"><i class="textoBranco icones fab fa-github"></i></a>
-            <a href="https://www.instagram.com/jessicarodriguesdc/"><i class="textoBranco icones fab fa-instagram"></i></a>
-        </h2>
-        </div>
-      </section>
 
-      <div class="album py-5 bg-light" id="projetos">
-        <div class="container">
-          <h2 class="jumbotron-heading text-center titulosPreto">Projetos</h2> 
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="img/crudEF.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">Este é um projeto de um CRUD em Entity framework, com o intuito de aplicar o migrations.</p>
-                  <ul>
-                    <li>C#</li>
-                    <li>.Net</li>
-                    <li>Entity framework</li>
-                    <li>Migrations</li>
-                    <li>SqLite</li>
-                  </ul>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="https://github.com/JessicaRodriguesdc/CRUD_EF_SqLite_Migrations"><button type="button" class="btn btn-sm btn-outline-dark">Ver Código</button></a>   
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div class="language-switch">
+    <button onclick="setLang('pt')">🇧🇷 PT</button>
+    <button onclick="setLang('en')">🇺🇸 EN</button>
+    <button onclick="setLang('es')">🇪🇸 ES</button>
+  </div>
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="img/APIVendas.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">Este é um projeto de uma API de Vendas desenvolvido em Java.</p>
-                  <ul>
-                    <li>Java</li>
-                    <li>Spring Boot</li>
-                    <li>JPA</li>
-                    <li>RestFul</li>
-                    <li>Security</li>
-                    <li>JWT</li>
-                  </ul>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="https://github.com/JessicaRodriguesdc/API-Vendas"><button type="button" class="btn btn-sm btn-outline-dark">Ver Código</button></a>   
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <header>
+    <img src="https://avatars3.githubusercontent.com/u/41476072?s=460&u=84a504aef52ca8c0d928e9e8f5f22b651b47cf00&v=4" alt="Foto de Jéssica Rodrigues">
+    <h1 id="title">Jéssica Rodrigues</h1>
+    <p id="subtitle">👩‍💻 Engenheira de Software | Web Developer | Back-end Developer</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/j%C3%A9ssica-rodrigues-97040b151/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/JessicaRodriguesdc" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/jessicarodriguesdc/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <a href="#contato" class="btn-primary" id="btnContact">Entre em Contato</a>
+  </header>
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="img/blogDev.PNG" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">Este é um projeto de um Blog sobre notícias do mundo da tecnologia.</p>
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                  </ul>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="https://github.com/JessicaRodriguesdc/Blog_Dev"><button type="button" class="btn btn-sm btn-outline-dark">Ver Código</button></a>   
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
+  <section id="projetos">
+    <h2 class="section-title" id="projectsTitle">Projetos</h2>
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-img"><img src="img/crudEF.jpg" alt="CRUD Entity Framework"></div>
+        <div class="project-content">
+          <h5>CRUD Entity Framework</h5>
+          <p id="projectCrud">CRUD com Entity Framework, Migrations e SQLite.</p>
+          <div class="tags"><span>C#</span><span>.NET</span><span>Entity Framework</span><span>SQLite</span></div>
         </div>
       </div>
-
-      <section class="jumbotron text-center corPrincipal" id="sobre-mim">
-        <div class="container">
-          <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
-          <p class="lead textoBranco" align="justify">
-            Olá, sou Jéssica Rodrigues, desenvolvedora, geek e gosto de buscar e compartilhar conhecimento. Atualmente, desenvolvendo projetos em c#(.Net framework e core) e em Java(Spring).
-          </p>
+      <div class="project-card">
+        <div class="project-img"><img src="img/APIVendas.jpg" alt="API de Vendas"></div>
+        <div class="project-content">
+          <h5>API de Vendas</h5>
+          <p id="projectApi">API Java com Spring Boot, JWT e autenticação segura.</p>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>JPA</span><span>JWT</span></div>
         </div>
-      </section>
-
-      <section>
-        <div>
-          <div class="container-fluid" id="contato">
-            <h3 style="padding-top: 60px;" class="text-center titulosPreto">Disponível para Oportunidades</h3>
-            
-            <a class="nav-link" href="mailto:jessicarodridc@gmail.com">
-              <h4 style="padding-bottom: 60px; margin-bottom: 0px;" class="text-center">
-                <i class="fas fa-mail-bulk">
-                  jessicarodridc@gmail.com
-                </i>
-                </h4>
-            </a>
-          </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img"><img src="img/blogDev.PNG" alt="Blog Dev"></div>
+        <div class="project-content">
+          <h5>Blog Dev</h5>
+          <p id="projectBlog">Blog de tecnologia feito com Node.js e MongoDB.</p>
+          <div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <footer class="text-center corSecundaria textoFooter">
-        <p class="textoBranco"> © 2023 Desenvolvido por:
-          Jéssica Rodrigues da Costa</p>
-      </footer>
+  <section id="projetos-avancados">
+    <h2 class="section-title" id="advancedProjectsTitle">Projetos Avançados</h2>
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-content">
+          <h5>FIAP SOAT-12 Challenges</h5>
+          <p id="advancedProjectFiapDesc">Repositórios com desafios de cada módulo da pós-graduação.</p>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>SQL</span></div>
+          <a href="https://github.com/fiap-soat-12" target="_blank" class="btn-primary">Ver no GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h5>Hackathon FIAP SOAT-12</h5>
+          <p id="advancedProjectHackathonDesc">Projeto desenvolvido durante o hackathon da pós-graduação.</p>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>React</span></div>
+          <a href="https://github.com/hackathon-fiap-soat-12" target="_blank" class="btn-primary">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mim">
+    <h2 class="section-title" id="aboutTitle">Sobre Mim</h2>
+    <p id="aboutText">Sou uma engenheira de software apaixonada por tecnologia, com experiência em C# e Java, sempre buscando evoluir minhas habilidades.</p>
+  </section>
+
+  <section id="contato">
+    <h2 class="section-title" id="contactTitle">Contato</h2>
+    <div>
+      <a href="mailto:jessicarodridc@gmail.com"><i class="fas fa-envelope"></i> jessicarodridc@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 <span id="footer">Desenvolvido por Jéssica Rodrigues</span></p>
+  </footer>
 </body>
 </html>
